@@ -1,0 +1,117 @@
+*,html,body{
+    padding: 15px;
+    margin:10px;
+    font-family: 'Roboto', sans-serif;
+    scroll-behavior: smooth;
+}
+.isi{
+    margin:0;
+    padding:0;
+}
+.desc{
+    padding:15px;
+    margin:15px;
+    height:80vh;
+    color:white;
+    text-transform: capitalize;
+    background: linear-gradient(to right bottom, #112d8a, #324f9e, #5471af, #7a93be, #a5b5cb);
+    border-radius: 20px;
+    box-shadow: 3px 6px 15px -2px rgba(189,185,185,0.92);
+    -webkit-box-shadow: 3px 6px 15px -2px rgba(189,185,185,0.92);
+    -moz-box-shadow: 3px 6px 15px -2px rgba(189,185,185,0.92);
+    position:relative;
+}
+.images {
+    display: flex;
+    top:0;
+    padding:5px;
+    background: white;
+    height:2px;
+    justify-content: space-between;
+    border-radius: 20px;
+}
+.images img{
+    background: #7a93be;
+    border-radius: 20px;
+    transform: translateY(-200px);
+    opacity: 0;
+    transition: 0.9s ease-in-out;
+}
+.images:hover{
+    transition: 0.8s ease-in-out;
+    height:350px;
+}
+.images:hover img{
+    position:relative;
+    transform: translateY(0);
+    opacity:1;
+}
+
+.desc p{
+    font-size: 20px;
+}
+.title{
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+.isi{
+    display:flex;
+}
+.card{
+    padding:15px;
+    margin:15px;
+    margin-top: 40px;
+    border-radius: 5px;
+    background: #ffffff;
+    box-shadow: 9px 8px 21px -3px rgba(148,147,147,0.26);
+    -webkit-box-shadow: 9px 8px 21px -3px rgba(148,147,147,0.26);
+    -moz-box-shadow: 9px 8px 21px -3px rgba(148,147,147,0.26);
+    width:500px;
+    color:black;
+    transition: 0.3s ease-in-out;
+    position: relative;
+}
+.card h3{
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.card:hover{
+    transform: translateY(-10px);
+}
+.solusi{
+    color:white;
+    text-decoration: none;
+    margin-top: 50px;
+    background-image: linear-gradient(to right bottom, #54418e, #674999, #7a51a3, #8d59ad, #a061b7);
+    border-radius: 10px;
+    box-shadow: 3px 2px 35px -3px rgba(189,185,185,1);
+    -webkit-box-shadow: 3px 2px 35px -3px rgba(189,185,185,1);
+    -moz-box-shadow: 3px 2px 35px -3px rgba(189,185,185,1);
+    position: relative;
+    transition: 0.3s ease-in-out;
+}
+.solusi:hover{
+    transform: translateY(-10px);
+}
+
+.reveal {
+    position: relative;
+    opacity: 0;
+  }
+  
+  .reveal.active {
+    opacity: 1;
+  }
+  .active.fade-bottom{
+    animation: fade-bottom 0.5s ease-in;
+  }
+  @keyframes fade-bottom{
+    from {
+      transform: translateY(100px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
